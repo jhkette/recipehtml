@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body{
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: outFit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: youngSerif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/* Typography */
+
+h1,
+h2,
+h4 {
+  font-family: youngSerif;
+}
+
+.h3 {
+  font-family: outFit;
+}
+h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #94453e;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0 0 1rem 0;
+  color: #752947;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 2rem;
+}
+
+ol li::marker {
+  color: #752947;
+  margin-left: 2rem;
+}
+
+ul li::marker {
+  color: #752947;
+ 
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+ul li {
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+ol li {
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+}
+/****** Typography end ******/
+
+body {
+  background-color: #f3e5d8;
+  padding: 3.5rem 0;
+}
+
+main {
+  background-color: white;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 0.9em;
+  padding: 2rem 0;
+  font-family: outFit;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #575652;
+}
+.container {
+  padding-bottom: 1.5rem;
+  margin: 1.5rem;
+  border-bottom: 1px solid #cdcdcddd;
+}
+
+.container.first{
+  border: 0;
+  padding: 0;
+}
+
+.container.nut{
+    border: 0;
+}
+
+.container.instr ol {
+  padding: 0 1rem;
+}
+
+.container.ingr ul {
+  padding: 0 1rem;
+}
+
+.container.instr li strong {
+  color: #1d1d1d;
+  font-weight: 700;
+}
+
+main img {
+  width: 100%;
+  border-radius: 0.9em;
+  
+}
+
+.highlight-preperation {
+  background-color: #fff7fc;
+  padding: 1rem 2rem;
+  border-radius: 0.9rem;
+  margin: 1.5rem 2rem;
+}
+
+/* table */
+table{
+    width: 90%;
+    margin: 0 auto;
+}
+tr{
+     border-bottom: 1px solid #cdcdcddd;
+     width: 100%;
+    
+}
+
+td{
+    width: 50%;
+    padding: 1rem 1rem;
+}
+
+.orange{
+  color: #752947;
+  font-weight: 700;
+}
+.container.img{
+  border: 0;
+  margin: 0 1.5rem 0 1.5rem;
+  padding-bottom: 0;
+ 
+}
+
+
+@media screen  and (max-width: 650px) {
+
+  body {
+    background-color: white;
+    padding: 0;
+  }
+  main{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .container.img{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .container.img img{
+    border-radius: 0;
+  }
+  
+}
